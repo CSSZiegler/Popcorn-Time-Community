@@ -52,6 +52,10 @@
                 url: Settings.tvAPI[index].url + 'shows/' + filters.page + '?' + querystring.stringify(params).replace(/%25%20/g, '%20'),
                 json: true
             };
+			
+			var tvApiServer = tvApiServer = Settings.tvAPI[index].url;
+			document.getElementById('TVApi').setAttribute('data-original-title', tvApiServer);
+			
             var req = jQuery.extend(true, {}, Settings.tvAPI[index], options);
             win.info('Request to TVApi', req.url);
             request(req, function (err, res, data) {
