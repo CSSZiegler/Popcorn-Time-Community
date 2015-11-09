@@ -101,7 +101,9 @@ var os = require('os');
                     'show': 800,
                     'hide': 100
                 }
+				
             });
+
         }
 
     });

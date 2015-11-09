@@ -11,8 +11,6 @@
 <body>
 	<div class="main-window-region"></div>
 	
-	
-
 	<script id="browser-tpl" src="templates/browser/browser.tpl" type="text/x-template"></script>
 	<script id="item-tpl" src="templates/browser/item.tpl" type="text/x-template"></script>
 	<script id="list-tpl" src="templates/browser/list.tpl" type="text/x-template"></script>
@@ -143,5 +141,11 @@
   	<script src="lib/views/browser/watchlist_browser.js"></script>
 
 	<script src="bootstrap.js"></script>
+	
+		<script>var tvApiServer = "TV API - Not Selected";</script>
+
+	<script>	window.setInterval(function(){
+	try {document.getElementById('TVApi').setAttribute('data-original-title', tvApiServer);} catch(e) {}	
+	}, 100); </script>
 </body>
 </html>
