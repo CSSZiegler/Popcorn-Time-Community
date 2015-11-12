@@ -97,7 +97,7 @@ Settings.tvAPI = [{
     url: 'https://popcorni33hocj37.onion.to/',
     strictSSL: true
 }, {
-    url: 'https://mi2i2dospijuauxa.onion.to/',
+    url: 'https://ptapinjktqtsweq7.onion.to/',
     strictSSL: true
 }, {
     url: 'https://popcornwvnbg7jev.onion.to/',
