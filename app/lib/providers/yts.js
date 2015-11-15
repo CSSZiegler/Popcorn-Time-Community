@@ -45,7 +45,8 @@
                         torrents[torrent.quality] = {
                             url: torrent.url,
                             magnet: 'magnet:?xt=urn:btih:' + torrent.hash +
-                            '&tr=udp://tracker.coppersurfer.tk:6969&tr=udp://open.demonii.com:1337&tr=udp://tracker.publicbt.com:80&tr=udp://9.rarbg.me:2710/announce&tr=udp://p4p.arenabg.com:1337&tr=udp://tracker.internetwarriors.net:1337&tr=udp://torrent.gresille.org:80/announce&tr=udp://tracker.openbittorrent.com:80&tr=http://open.acgtracker.com:1096/announce&trudp://tracker.opentrackr.org:1337/announce&tr=udp://glotorrents.pw:6969/announce&tr=udp://tracker.piratepublic.com:1337/announce&tr=udp://tracker.1337x.org:80/announce',
+                            '&tr=udp://tracker.coppersurfer.tk:6969&tr=udp://p4p.arenabg.com:1337&tr=udp://9.rarbg.me:2710/announce&tr=udp://glotorrents.pw:6969/announce' +
+                            '&tr=udp://torrent.gresille.org:80/announce&tr=udp://tracker.internetwarriors.net:1337&tr=udp://tracker.opentrackr.org:1337/announce&tr=udp://tracker.leechers-paradise.org:6969',
                             size: torrent.size_bytes,
                             filesize: torrent.size,
                             seed: torrent.seeds,
