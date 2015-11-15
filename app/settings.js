@@ -113,21 +113,14 @@ Settings.ytsAPI = [{
 }];
 
 Settings.updateEndpoint = {
-    url: 'https://popcorntime.re/',
+    url: 'https://popcornbxexxf3bu.onion.to/',
     index: 0,
     proxies: [{
-        url: 'https://popcorntime.re/',
-        fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C',
+        url: 'https://popcornqbt6ktnfs.onion.to/',
+        //fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C',
     }, {
-        url: 'https://popcorntime.io/',
-        fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C'
-    }, {
-        url: 'https://popcorntime.cc/',
-        fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C'
-    }, {
-        url: 'https://its.pt/',
-        ssl: false,
-        fingerprint: /301/
+        url: 'https://popcornd6v5duho3.onion.to/',
+        //fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C',
     }]
 };
 
