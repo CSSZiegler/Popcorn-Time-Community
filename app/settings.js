@@ -69,7 +69,7 @@ Settings.tvstAccessToken = '';
 Settings.connectionLimit = 100;
 Settings.dhtLimit = 500;
 Settings.streamPort = 0; // 0 = Random
-Settings.tmpLocation = path.join(os.tmpDir(), 'Popcorn-Time-Community-Cache');
+Settings.tmpLocation = path.join(os.tmpDir(), 'Popcorn-Time');
 Settings.databaseLocation = path.join(data_path, 'data');
 Settings.deleteTmpOnClose = true;
 Settings.automaticUpdating = true;
@@ -94,10 +94,10 @@ Settings.vpnUsername = '';
 Settings.vpnPassword = '';
 
 Settings.tvAPI = [{
-    url: 'https://popcorni33hocj37.onion.to/',
+    url: 'https://ptapinjktqtsweq7.onion.to/',
     strictSSL: true
 }, {
-    url: 'https://ptapinjktqtsweq7.onion.to/',
+    url: 'https://popcorni33hocj37.onion.to/',
     strictSSL: true
 }, {
     url: 'https://popcornwvnbg7jev.onion.to/',
@@ -105,45 +105,29 @@ Settings.tvAPI = [{
 }, {
     url: 'https://www.popcorntime.ws/api/eztv/',
     strictSSL: true
-}, {
-    url: 'https://odgoglfi7uddahby.onion.to/',
-    strictSSL: true
-}/*, {
-    url: 'https://api.popcorntime.io/',
-    strictSSL: true
-}, {
-    url: 'http://tv.ytspt.re/',
-    strictSSL: false
-}*/];
+}];
 
 Settings.ytsAPI = [{
-    uri: 'http://api.torrentsapi.com/',
-    strictSSL: false
-}/*, {
-    uri: 'https://cloudflare.com/',
-    headers: {
-        'Host': 'xor.image.yt',
-        'User-Agent': 'Mozilla/5.0 (Linux) AppleWebkit/534.30 (KHTML, like Gecko) PT/3.8.0'
-    },
+    uri: 'https://yts.ag/',
     strictSSL: true
-}, {
-    uri: 'http://cloudflare.com/',
-    headers: {
-        'Host': 'xor.image.yt',
-        'User-Agent': 'Mozilla/5.0 (Linux) AppleWebkit/534.30 (KHTML, like Gecko) PT/3.8.0'
-    },
-    strictSSL: false
-}*/];
+}];
 
 Settings.updateEndpoint = {
-    url: 'https://popcornbxexxf3bu.onion.to/',
+    url: 'https://popcorntime.re/',
     index: 0,
     proxies: [{
-        url: 'https://popcornqbt6ktnfs.onion.to/'
-        // fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C',
+        url: 'https://popcorntime.re/',
+        fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C',
     }, {
-        url: 'https://popcornd6v5duho3.onion.to/'
-        // fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C'
+        url: 'https://popcorntime.io/',
+        fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C'
+    }, {
+        url: 'https://popcorntime.cc/',
+        fingerprint: '30:A6:BA:6C:19:A4:D5:C3:5A:E8:F1:56:C6:B4:E1:DC:EF:DD:EC:8C'
+    }, {
+        url: 'https://its.pt/',
+        ssl: false,
+        fingerprint: /301/
     }]
 };
 
@@ -217,18 +201,18 @@ var AdvSettings = {
         }
 
         switch (process.platform) {
-        case 'darwin':
-            AdvSettings.set('os', 'mac');
-            break;
-        case 'win32':
-            AdvSettings.set('os', 'windows');
-            break;
-        case 'linux':
-            AdvSettings.set('os', 'linux');
-            break;
-        default:
-            AdvSettings.set('os', 'unknown');
-            break;
+            case 'darwin':
+                AdvSettings.set('os', 'mac');
+                break;
+            case 'win32':
+                AdvSettings.set('os', 'windows');
+                break;
+            case 'linux':
+                AdvSettings.set('os', 'linux');
+                break;
+            default:
+                AdvSettings.set('os', 'unknown');
+                break;
         }
 
         return Q();
